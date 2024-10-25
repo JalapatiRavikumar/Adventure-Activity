@@ -1,0 +1,6 @@
+<h2>Available Adventure Activities</h2>
+<ul>
+  <li *ngFor="let activity of activities">
+    {{ activity.name }} - {{ activity.location }} - ${{ activity.price }}
+  </li>
+</ul>
