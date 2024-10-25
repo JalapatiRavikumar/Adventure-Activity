@@ -1,0 +1,16 @@
+<h2>Book an Activity</h2>
+<form [formGroup]="bookingForm" (ngSubmit)="onSubmit()">
+  <label for="name">Name:</label>
+  <input id="name" formControlName="name">
+  
+  <label for="email">Email:</label>
+  <input id="email" formControlName="email">
+
+  <label for="activityId">Activity ID:</label>
+  <input id="activityId" formControlName="activityId">
+
+  <label for="date">Date:</label>
+  <input type="date" id="date" formControlName="date">
+
+  <button type="submit" [disabled]="bookingForm.invalid">Book</button>
+</form>
